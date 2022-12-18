@@ -7,7 +7,9 @@
 **Superuser acces :** 
 
 **username :** _mathisenrici_
+
 **email :** _mathis.enrici@gmail.com_
+
 **mdp :** _C0uC0uC0u_
 
 **Users :** 
@@ -36,5 +38,7 @@ Dans le dossier où se trouve manage.py :
 
 ## Participants au projet
 _Mathis Enrici_
+
 _Manuel Hernandez_
+
 _Charles Divaret_
