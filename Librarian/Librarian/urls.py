@@ -19,9 +19,26 @@ from django.urls import include
 from django.views.generic import RedirectView
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib.auth.views import LoginView
+
+import authentication.views
+import catalog.views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    #path('admin/', admin.site.urls),
     path('catalog/', include('catalog.urls')),
-    path('', RedirectView.as_view(url='/catalog/', permanent=True)),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    #path('', RedirectView.as_view(url='/catalog/', permanent=True)),
+    #path('', LoginView.as_view(
+    #    template_name='authentication/login.html',
+    #    redirect_authenticated_user=True
+    #), name='login'),
+    #path('logout', authentication.views.logout_user, name='logout'),
+    #path('home/', catalog.views.home, name='home'),
+    path('admin/', admin.site.urls),
+    path('', LoginView.as_view(
+        template_name='authentication/login.html',
+        redirect_authenticated_user=True
+    ), name='login'),
+    path('logout', authentication.views.logout_user, name='logout'),
+    path('home/', catalog.views.home, name='index'),
+] 

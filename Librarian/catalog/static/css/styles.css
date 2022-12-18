@@ -1,0 +1,29 @@
+.sidebar-nav {
+    margin-top: 20px;
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar-nav li a{
+    padding: 20px;
+    font-style: normal;
+    text-decoration:none ;
+    background-color: #39FF14;
+    border: 5px solid #15F4EE;
+}
+
+.sidebar-nav li a:hover{
+    padding: 20px;
+    font-style: normal;
+    text-decoration:none ;
+    border: #39FF14;
+    background-color: 5px solid #15F4EE;
+}
+
+
+body{
+    background-color: #FA25CB;
+    color: #F7FF3C;
+}
